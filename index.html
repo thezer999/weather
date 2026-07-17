@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода на 3 дня (Без API ключа)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Введите город (например, Москва)" value="Москва">
+            <button id="search-btn">Искать</button>
+        </div>
+
+        <div id="weather-content" style="display: none;">
+            <div class="city-name" id="city-title">Город</div>
+            <div class="forecast" id="forecast-container">
+                <!-- Карточки погоды -->
+            </div>
+        </div>
+
+        <div class="error" id="error-message">Ошибка! Не удалось найти город или загрузить данные.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
